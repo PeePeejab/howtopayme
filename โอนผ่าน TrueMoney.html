@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>โอนผ่าน TrueMoney</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: url('https://uploads.onecompiler.io/43qeseht9/43rx2cxpb/1753621754318.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .content {
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      box-shadow:
+        0 0 12px 3px #ff0000,
+        0 0 20px 6px #ff1a1a,
+        0 0 30px 10px #ff3333;
+      animation: red-glow 1.8s infinite alternate;
+    }
+
+    @keyframes red-glow {
+      0% {
+        box-shadow:
+          0 0 12px 3px #ff0000,
+          0 0 20px 6px #ff1a1a,
+          0 0 30px 10px #ff3333;
+      }
+      100% {
+        box-shadow:
+          0 0 18px 5px #ff4d4d,
+          0 0 26px 8px #ff6666,
+          0 0 36px 12px #ff8080;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e53935;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      border: 2px solid white;
+    }
+
+    .btn:hover {
+      background: #d32f2f;
+    }
+
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      z-index: 1;
+      color: white;
+      font-size: 1em;
+      user-select: none;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- หิมะตก -->
+  <script>
+    for (let i = 0; i < 25; i++) {
+      let snowflake = document.createElement("div");
+      snowflake.className = "snowflake";
+      snowflake.innerHTML = "❄️";
+      snowflake.style.left = Math.random() * 100 + "vw";
+      snowflake.style.animationDuration = (3 + Math.random() * 5) + "s";
+      snowflake.style.fontSize = (12 + Math.random() * 24) + "px";
+      document.body.appendChild(snowflake);
+    }
+  </script>
+
+  <div class="content">
+    <img class="profile-img" src="https://uploads.onecompiler.io/43qeseht9/43rx2cxpb/1753621795423.jpg" alt="Profile" />
+    
+    <a class="btn" href="https://tmn.app.link/y3ROqKigeVb" target="_blank">💸 TrueMoney 🤍</a>
+
+    <p class="note">Thank You 💐</p>
+  </div>
+</body>
+</html>
